@@ -46,10 +46,7 @@ WORKDIR /home/tomato
 USER tomato
 CMD ["/checkout-tomato-source.sh"]
 
-# Clean up APT when done.
-# USER root
-# RUN apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
-
+USER root
 ENV AUTHORIZED_KEYS **None**
 
 EXPOSE 22
