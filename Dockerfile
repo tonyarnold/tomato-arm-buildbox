@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER Tony Arnold <tony@thecocoabots.com>
 
 # Install packages
@@ -13,7 +13,7 @@ ADD run.sh /run.sh
 ADD checkout_sources.sh /checkout-tomato-source.sh
 RUN chmod +x /*.sh
 
-RUN apt-get install -y build-essential wget apt-utils locales
+RUN apt-get install -y wget apt-utils locales
 RUN apt-get install -y build-essential autoconf libncurses5 libncurses5-dev m4 bison flex libstdc++6-4.4-dev g++-4.4 g++ libtool sqlite gcc g++ binutils patch bzip2 flex bison make gettext unzip zlib1g-dev libc6 gperf sudo automake automake1.9 git-core lib32stdc++6 libncurses5 libncurses5-dev m4 bison gawk flex libstdc++6-4.4-dev g++-4.4-multilib g++ git gitk zlib1g-dev autopoint libtool shtool autogen mtd-utils gcc-multilib gconf-editor lib32z1-dev pkg-config gperf libssl-dev libxml2-dev libelf1:i386 make intltool libglib2.0-dev libstdc++5 texinfo dos2unix xsltproc libnfnetlink0 libcurl4-openssl-dev libxml2-dev libgtk2.0-dev libnotify-dev libevent-dev mc
 
 
