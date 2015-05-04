@@ -1,4 +1,4 @@
-FROM debian:7.7
+FROM debian:7.8
 MAINTAINER Tony Arnold <tony@thecocoabots.com>
 
 # Install packages
